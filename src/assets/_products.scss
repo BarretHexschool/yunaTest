@@ -1,0 +1,40 @@
+.sidebar-link {
+    background-color: transparent;
+    border: transparent;
+    &-active {
+      border-bottom: 3px solid $primary;
+      color: $primary-200;
+      pointer-events: none;
+      @include md{
+      padding-left: 13px;
+      border-left: 3px solid $primary;
+      border-bottom: none;
+      }
+    }
+  }
+.sidebar-position{
+  position: sticky;
+  top: 68.5px;
+  z-index: 1020;
+  
+  @include md{
+    position: sticky;
+    top:100px;
+    z-index: 0;
+    
+  }
+}
+  
+.products-card {
+  color: $dark;
+  &:hover {
+    color: $dark;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+  }
+}
+.toast-position{
+  position: sticky;
+  top:56px;
+  z-index: 1;
+}
